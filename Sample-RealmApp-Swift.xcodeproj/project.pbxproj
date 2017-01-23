@@ -12,6 +12,12 @@
 		07D0F4611E34788C00DC3C85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07D0F45F1E34788C00DC3C85 /* Main.storyboard */; };
 		07D0F4631E34788C00DC3C85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07D0F4621E34788C00DC3C85 /* Assets.xcassets */; };
 		07D0F4661E34788C00DC3C85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07D0F4641E34788C00DC3C85 /* LaunchScreen.storyboard */; };
+		07D0F46F1E34803F00DC3C85 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D0F46D1E34803F00DC3C85 /* Realm.framework */; };
+		07D0F4701E34803F00DC3C85 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D0F46E1E34803F00DC3C85 /* RealmSwift.framework */; };
+		07D0F4721E3480F900DC3C85 /* RealmSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D0F4711E3480F900DC3C85 /* RealmSwift.swift */; };
+		07D0F4741E34828000DC3C85 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D0F4731E34828000DC3C85 /* TableViewController.swift */; };
+		07D0F4761E349D1F00DC3C85 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D0F4751E349D1F00DC3C85 /* AddViewController.swift */; };
+		55B81F8B016B498727091085 /* Pods_Sample_RealmApp_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 710092A9EB6F9EECE44BC42F /* Pods_Sample_RealmApp_Swift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,14 @@
 		07D0F4621E34788C00DC3C85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07D0F4651E34788C00DC3C85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07D0F4671E34788C00DC3C85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07D0F46D1E34803F00DC3C85 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = "Pods/../build/Debug-iphoneos/Realm/Realm.framework"; sourceTree = "<group>"; };
+		07D0F46E1E34803F00DC3C85 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = "Pods/../build/Debug-iphoneos/RealmSwift/RealmSwift.framework"; sourceTree = "<group>"; };
+		07D0F4711E3480F900DC3C85 /* RealmSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmSwift.swift; sourceTree = "<group>"; };
+		07D0F4731E34828000DC3C85 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		07D0F4751E349D1F00DC3C85 /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		710092A9EB6F9EECE44BC42F /* Pods_Sample_RealmApp_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sample_RealmApp_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B6CC3D7B880FB1A523AAE12 /* Pods-Sample-RealmApp-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample-RealmApp-Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sample-RealmApp-Swift/Pods-Sample-RealmApp-Swift.debug.xcconfig"; sourceTree = "<group>"; };
+		7BA421B2913FE6F781E4226D /* Pods-Sample-RealmApp-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample-RealmApp-Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sample-RealmApp-Swift/Pods-Sample-RealmApp-Swift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +43,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07D0F46F1E34803F00DC3C85 /* Realm.framework in Frameworks */,
+				07D0F4701E34803F00DC3C85 /* RealmSwift.framework in Frameworks */,
+				55B81F8B016B498727091085 /* Pods_Sample_RealmApp_Swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +57,8 @@
 			children = (
 				07D0F45A1E34788C00DC3C85 /* Sample-RealmApp-Swift */,
 				07D0F4591E34788C00DC3C85 /* Products */,
+				E359C8219CDB569E70A9F1A5 /* Pods */,
+				36300D77C02B0E79077875E0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +75,34 @@
 			children = (
 				07D0F45B1E34788C00DC3C85 /* AppDelegate.swift */,
 				07D0F45D1E34788C00DC3C85 /* ViewController.swift */,
+				07D0F4731E34828000DC3C85 /* TableViewController.swift */,
+				07D0F4751E349D1F00DC3C85 /* AddViewController.swift */,
 				07D0F45F1E34788C00DC3C85 /* Main.storyboard */,
+				07D0F4711E3480F900DC3C85 /* RealmSwift.swift */,
 				07D0F4621E34788C00DC3C85 /* Assets.xcassets */,
 				07D0F4641E34788C00DC3C85 /* LaunchScreen.storyboard */,
 				07D0F4671E34788C00DC3C85 /* Info.plist */,
 			);
 			path = "Sample-RealmApp-Swift";
+			sourceTree = "<group>";
+		};
+		36300D77C02B0E79077875E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07D0F46D1E34803F00DC3C85 /* Realm.framework */,
+				07D0F46E1E34803F00DC3C85 /* RealmSwift.framework */,
+				710092A9EB6F9EECE44BC42F /* Pods_Sample_RealmApp_Swift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E359C8219CDB569E70A9F1A5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B6CC3D7B880FB1A523AAE12 /* Pods-Sample-RealmApp-Swift.debug.xcconfig */,
+				7BA421B2913FE6F781E4226D /* Pods-Sample-RealmApp-Swift.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +112,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 07D0F46A1E34788C00DC3C85 /* Build configuration list for PBXNativeTarget "Sample-RealmApp-Swift" */;
 			buildPhases = (
+				9C4E9F00574CEC1DDC4AB632 /* [CP] Check Pods Manifest.lock */,
 				07D0F4541E34788C00DC3C85 /* Sources */,
 				07D0F4551E34788C00DC3C85 /* Frameworks */,
 				07D0F4561E34788C00DC3C85 /* Resources */,
+				1D332FADF34939BC58A73E21 /* [CP] Embed Pods Frameworks */,
+				62C85CB51F7C35CBF0E1C855 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,13 +175,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1D332FADF34939BC58A73E21 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sample-RealmApp-Swift/Pods-Sample-RealmApp-Swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62C85CB51F7C35CBF0E1C855 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sample-RealmApp-Swift/Pods-Sample-RealmApp-Swift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C4E9F00574CEC1DDC4AB632 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		07D0F4541E34788C00DC3C85 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07D0F4761E349D1F00DC3C85 /* AddViewController.swift in Sources */,
 				07D0F45E1E34788C00DC3C85 /* ViewController.swift in Sources */,
 				07D0F45C1E34788C00DC3C85 /* AppDelegate.swift in Sources */,
+				07D0F4721E3480F900DC3C85 /* RealmSwift.swift in Sources */,
+				07D0F4741E34828000DC3C85 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +353,14 @@
 		};
 		07D0F46B1E34788C00DC3C85 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B6CC3D7B880FB1A523AAE12 /* Pods-Sample-RealmApp-Swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Realm",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/RealmSwift",
+				);
 				INFOPLIST_FILE = "Sample-RealmApp-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "yunnieyunick.Sample-RealmApp-Swift";
@@ -270,8 +371,14 @@
 		};
 		07D0F46C1E34788C00DC3C85 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BA421B2913FE6F781E4226D /* Pods-Sample-RealmApp-Swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Realm",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/RealmSwift",
+				);
 				INFOPLIST_FILE = "Sample-RealmApp-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "yunnieyunick.Sample-RealmApp-Swift";
@@ -299,6 +406,7 @@
 				07D0F46C1E34788C00DC3C85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
